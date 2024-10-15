@@ -22,6 +22,6 @@ jobs:
 
     - name: Build and Push the Docker image
       run: |
-        docker build ./app --tag ghcr.io/joaoOrganization/react-image:latest
-        docker tag ghcr.io/joaoOrganization/react-image:latest ghcr.io/joaoOrganization/react-image:${{ steps.generate_tag.outputs.sha }}
-        docker push ghcr.io/joaoOrganization/react-image --all-tags
+        docker build ./app --tag ghcr.io/joaoorganization/react-image:latest
+        docker tag ghcr.io/joaoorganization/react-image:latest ghcr.io/joaoorganization/react-image:${{ steps.generate_tag.outputs.sha }}
+        docker push ghcr.io/joaoorganization/react-image --all-tags
