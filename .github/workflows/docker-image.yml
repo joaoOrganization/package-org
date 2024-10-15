@@ -15,7 +15,7 @@ jobs:
       run: docker login --username jvictormarques --password ${{ secrets.GHCR_PSWD }} ghcr.io
 
     - name: Generate TAG
-      id: generate_tag
+      id: generate_tag 
       run: |
         SHA=$(echo $GITHUB_SHA | head -c7)
         echo "sha=$SHA" >> $GITHUB_OUTPUT
